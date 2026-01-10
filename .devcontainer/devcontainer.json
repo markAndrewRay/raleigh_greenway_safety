@@ -1,0 +1,14 @@
+{
+    "name": "Raleigh Greenway Safety Analysis",
+    "image": "mcr.microsoft.com/devcontainers/python:3.11",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "innoverio.vscode-dbt-power-user",
+                "ms-python.python",
+                "ms-toolsai.jupyter"
+            ]
+        }
+    },
+    "postCreateCommand": "pip install dbt-core dbt-duckdb duckdb pandas scipy matplotlib seaborn"
+}
