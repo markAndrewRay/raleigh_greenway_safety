@@ -29,3 +29,19 @@ Happy modeling!
 [0m19:08:05.929015 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x786790d78450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x786790c68610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x786791069950>]}
 [0m19:08:05.929424 [debug] [MainThread]: Flushing usage events
 [0m19:08:06.025311 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:27:18.276727 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7392a641b1d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7392a63475d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7392a641b810>]}
+
+
+============================== 22:27:18.283840 | 6c8b993b-66f7-4a02-9a32-d3b477e42d45 ==============================
+[0m22:27:18.283840 [info ] [MainThread]: Running with dbt=1.11.2
+[0m22:27:18.284541 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'empty': 'False', 'use_experimental_parser': 'False', 'write_json': 'True', 'invocation_command': 'dbt run', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'debug': 'False', 'use_colors': 'True', 'cache_selected_only': 'False', 'quiet': 'False', 'indirect_selection': 'eager', 'log_path': 'logs', 'static_parser': 'True', 'target_path': 'None', 'warn_error': 'None', 'send_anonymous_usage_stats': 'True', 'printer_width': '80', 'no_print': 'None', 'partial_parse': 'True', 'fail_fast': 'False', 'log_format': 'default', 'profiles_dir': '/workspaces/raleigh_greenway_safety', 'introspect': 'True'}
+[0m22:27:18.285092 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /workspaces/raleigh_greenway_safety/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m22:27:18.286092 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.06363958, "process_in_blocks": "8", "process_kernel_time": 0.263703, "process_mem_max_rss": "104952", "process_out_blocks": "24", "process_user_time": 1.410367}
+[0m22:27:18.286618 [debug] [MainThread]: Command `dbt run` failed at 22:27:18.286510 after 0.06 seconds
+[0m22:27:18.287032 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7392a63931d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7392a6393250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7392a66dd350>]}
+[0m22:27:18.287484 [debug] [MainThread]: Flushing usage events
+[0m22:27:18.382172 [debug] [MainThread]: An error was encountered while trying to flush usage events

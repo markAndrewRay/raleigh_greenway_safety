@@ -7,3 +7,4 @@ logs/
 *.duckdb
 target/
 dbt_packages/
+data/raleigh_incidents.csv
