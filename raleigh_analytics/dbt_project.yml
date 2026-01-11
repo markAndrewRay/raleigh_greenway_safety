@@ -16,3 +16,6 @@ clean-targets:
 models:
   raleigh_analytics:
       +materialized: view
+
+vars:
+  data_path: "data"
