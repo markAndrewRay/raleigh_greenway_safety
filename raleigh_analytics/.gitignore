@@ -2,3 +2,8 @@
 target/
 dbt_packages/
 logs/
+*.csv
+*.geojson
+*.duckdb
+target/
+dbt_packages/

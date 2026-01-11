@@ -2,5 +2,9 @@ raleigh_analytics:
   outputs:
     dev:
       type: duckdb
-      path: raleigh_greenway.duckdb
+      path: /workspaces/raleigh_greenway_safety/raleigh_greenway.duckdb
+      extensions:
+        - spatial
+      settings:
+        external_access: true
   target: dev

@@ -1,6 +1,0 @@
-raleigh_analytics:
-  outputs:
-    dev:
-      type: duckdb
-      path: ../raleigh_greenway.duckdb
-  target: dev
