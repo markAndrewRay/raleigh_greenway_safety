@@ -1,0 +1,7 @@
+dbt-core
+dbt-duckdb
+duckdb
+pandas
+scipy
+matplotlib
+seaborn
