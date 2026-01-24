@@ -1,7 +1,8 @@
-dbt-core
-dbt-duckdb
-duckdb
 pandas
-scipy
-matplotlib
+duckdb
+dbt-duckdb
+pyarrow
+statsmodels
 seaborn
+geopandas
+shapely

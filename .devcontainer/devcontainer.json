@@ -1,6 +1,9 @@
 {
     "name": "Raleigh Greenway Safety Analysis",
     "image": "mcr.microsoft.com/devcontainers/python:3.11",
+    "features": {
+        "ghcr.io/devcontainers/features/git-lfs:1": {}
+    },
     "customizations": {
         "vscode": {
             "extensions": [
@@ -10,5 +13,5 @@
             ]
         }
     },
-    "postCreateCommand": "pip3 install -r requirements.txt && curl https://install.duckdb.org | sh"
+    "postCreateCommand": "pip3 install -r requirements.txt && git lfs install && git lfs pull"
 }
