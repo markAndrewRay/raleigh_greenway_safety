@@ -15,3 +15,12 @@ If you wish to use the DuckDB Command Line Interface (CLI) directly in the termi
 wget [https://github.com/duckdb/duckdb/releases/download/v1.1.3/duckdb_cli-linux-amd64.zip](https://github.com/duckdb/duckdb/releases/download/v1.1.3/duckdb_cli-linux-amd64.zip)
 unzip duckdb_cli-linux-amd64.zip
 sudo mv duckdb /usr/local/bin/
+
+
+## Data Pipeline Notes
+
+### Raleigh Incidents CSV
+- **Issue**: The raw `raleigh_incidents.csv` contains a UTF-8 BOM (Byte Order Mark) and CRLF line endings that break the DuckDB auto-parser.
+- **Pre-processing**: The file must be sanitized before ingestion using:
+  `sed '1s/^\xef\xbb\xbf//; s/\r$//' data/raleigh_incidents.csv > data/cleaned_incidents.csv`
+- **Ingestion**: Use `ignore_errors=true` and `strict_mode=false` in the `read_csv` function to bypass structural inconsistencies in the government data.
