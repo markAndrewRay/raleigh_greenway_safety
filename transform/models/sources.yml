@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: external_source
+    schema: main
+    tables:
+      - name: raw_incidents
+      - name: raw_greenways

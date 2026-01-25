@@ -1,0 +1,8 @@
+transform:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: ../greenway.db
+      extensions:
+        - spatial

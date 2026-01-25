@@ -1,0 +1,31 @@
+[0m00:00:11.638010 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b32117fbd90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b32117f9e90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b321269d5d0>]}
+
+
+============================== 00:00:11.671079 | b9ecd4b4-1869-47da-8be8-661232e2b33f ==============================
+[0m00:00:11.671079 [info ] [MainThread]: Running with dbt=1.11.2
+[0m00:00:11.671777 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'partial_parse': 'True', 'profiles_dir': '/home/vscode/.dbt', 'log_path': 'logs', 'use_colors': 'True', 'warn_error': 'None', 'log_format': 'default', 'printer_width': '80', 'version_check': 'True', 'no_print': 'None', 'invocation_command': 'dbt init transform', 'introspect': 'True', 'indirect_selection': 'eager', 'target_path': 'None', 'log_cache_events': 'False', 'fail_fast': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'debug': 'False', 'write_json': 'True', 'quiet': 'False', 'use_experimental_parser': 'False'}
+[0m00:00:11.683242 [info ] [MainThread]: Creating dbt configuration folder at /home/vscode/.dbt
+[0m00:00:11.684601 [debug] [MainThread]: Starter project path: /workspaces/raleigh_greenway_safety/venv/lib/python3.11/site-packages/dbt/include/starter_project
+[0m00:00:11.690645 [info ] [MainThread]: 
+Your new dbt project "transform" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m00:00:11.691306 [info ] [MainThread]: Setting up your profile.
+[0m00:00:15.423706 [info ] [MainThread]: Profile transform written to /home/vscode/.dbt/profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m00:00:15.425922 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 3.8375823, "process_in_blocks": "119744", "process_kernel_time": 0.379793, "process_mem_max_rss": "130956", "process_out_blocks": "72", "process_user_time": 1.666481}
+[0m00:00:15.426528 [debug] [MainThread]: Command `dbt init` succeeded at 00:00:15.426418 after 3.84 seconds
+[0m00:00:15.426945 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b32118268d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b3211b27390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b32117f8e10>]}
+[0m00:00:15.427418 [debug] [MainThread]: Flushing usage events
+[0m00:00:15.530590 [debug] [MainThread]: An error was encountered while trying to flush usage events
