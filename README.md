@@ -24,3 +24,13 @@ sudo mv duckdb /usr/local/bin/
 - **Pre-processing**: The file must be sanitized before ingestion using:
   `sed '1s/^\xef\xbb\xbf//; s/\r$//' data/raleigh_incidents.csv > data/cleaned_incidents.csv`
 - **Ingestion**: Use `ignore_errors=true` and `strict_mode=false` in the `read_csv` function to bypass structural inconsistencies in the government data.
+
+### Development Environment
+To run the analysis notebook, ensure the virtual environment is active and launch Jupyter Lab:
+
+```bash
+# Activate venv
+source .venv/bin/activate
+
+# Launch Jupyter
+python3 -m jupyter lab --ip=0.0.0.0 --port=8888 --no-browser
