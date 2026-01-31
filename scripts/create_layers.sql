@@ -1,19 +1,20 @@
 /* BATTLE NOTE:
 ---------------------------------------------------------
-Finalizing the Coordinate Flip. 
-Using ST_FlipCoordinates to ensure Longitude (X) 
-and Latitude (Y) are in the correct order for NC.
+Both Incidents and Greenways arrive as (Lat, Long).
+They are flipped to (Long, Lat) so the North Carolina 
+projection (EPSG:2264) places them in the 2-million 
+range instead of the 150-million range.
 ---------------------------------------------------------
 */
 
 INSTALL spatial;
 LOAD spatial;
 
--- 1. Incident Points View
+-- 1. Incident Points View (Added Flip)
 CREATE OR REPLACE VIEW v_incident_points AS
 SELECT 
     *,
-    ST_Transform(ST_Point(longitude, latitude), 'EPSG:4326', 'EPSG:2264') AS geom_point
+    ST_Transform(ST_FlipCoordinates(ST_Point(longitude, latitude)), 'EPSG:4326', 'EPSG:2264') AS geom_point
 FROM stg_incidents
 WHERE latitude != 0 AND longitude != 0;
 
